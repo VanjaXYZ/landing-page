@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f124fba2b7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <i class="fa-solid fa-utensils"></i>
+          <span>Crystal Glamour</span>
+        </div>
+        <nav class="nav">
+          <div class="nav__links">
+            <a class="nav__link" href="#about-us">About Us</a>
+            <a class="nav__link" href="#menu" id="toggleMenu">Menu</a>
+            <a class="nav__link" href="#order" id="toggleOrder">Order</a>
+            <a class="nav__link" href="#contact">Contact</a>
+          </div>
+          <!-- HAMBURGER CLICKED -->
+          <div class="nav__links__clicked hidden__clicked">
+            <a class="nav__link__clicked" href="#about-us">About Us</a>
+            <a class="nav__link__clicked" href="#menu" id="toggleMenu2">Menu</a>
+            <a class="nav__link__clicked" href="#order" id="toggleOrder2"
+              >Order</a
+            >
+            <a class="nav__link__clicked" href="#contact">Contact</a>
+          </div>
+          <!-- ********** -->
+          <div class="hamburger">
+            <span class="ham__1"></span>
+            <span class="ham__2"></span>
+            <span class="ham__3"></span>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="section__hero" id="about-us">
+          <!-- **********MENU*************** -->
+          <div class="menu hidden">
+            <div class="menu__content">
+              <div id="main-menu">
+                <h3>MAIN DISHES</h3>
+                <table>
+                  <tr>
+                    <td>GRILLED STEAK ........ $16.00</td>
+                  </tr>
+                  <tr>
+                    <td>CHICKEN & RICE ........ $10.00</td>
+                  </tr>
+                  <tr>
+                    <td>CORDON BLUE ........ $12.00</td>
+                  </tr>
+                  <tr>
+                    <td>TUNA STEAK ........ $32.00</td>
+                  </tr>
+                  <tr>
+                    <td>JUMBO PIZZA ........ $14.00</td>
+                  </tr>
+                </table>
+              </div>
+              <div id="salad-menu">
+                <h3>SALADS</h3>
+                <table>
+                  <tr>
+                    <td>SEASON SALAD ........ $5.00</td>
+                  </tr>
+                  <tr>
+                    <td>CHICKEN SALAD ........ $7.00</td>
+                  </tr>
+                  <tr>
+                    <td>FITNESS SALAD ........ $9.00</td>
+                  </tr>
+                </table>
+              </div>
+              <div id="dessert-menu">
+                <h3>DESSERT</h3>
+                <table>
+                  <tr>
+                    <td>NUTELLA PANCAKES ........ $5.00</td>
+                  </tr>
+                  <tr>
+                    <td>BANANA SPLIT ........ $8.00</td>
+                  </tr>
+                  <tr>
+                    <td>APPLE PIE ........ $2.50</td>
+                  </tr>
+                  <tr>
+                    <td>ICECREAM ........ $1.20</td>
+                  </tr>
+                  <tr>
+                    <td>CHOCOLATE CAKE ........ $11.00</td>
+                  </tr>
+                  <tr>
+                    <td>STRAWBERRY CAKE ........ $12.00</td>
+                  </tr>
+                  <tr>
+                    <td>FRUIT & CREAM ........ $3.70</td>
+                  </tr>
+                </table>
+              </div>
+              <div id="drinks-menu">
+                <h3>DRINKS</h3>
+                <table>
+                  <tr>
+                    <td>MINERAL WATER ........ $3.00</td>
+                  </tr>
+                  <tr>
+                    <td>FRESH ORANGE JUICE ........ $4.50</td>
+                  </tr>
+                  <tr>
+                    <td>COFFEE ........ $2.20</td>
+                  </tr>
+                  <tr>
+                    <td>TEA ........ $1.50</td>
+                  </tr>
+                  <tr>
+                    <td>LIGHT BEER ........ $2.00</td>
+                  </tr>
+                  <tr>
+                    <td>DARK BEER ........ $2.80</td>
+                  </tr>
+                  <tr>
+                    <td>WINE ........ $1.50</td>
+                  </tr>
+                  <tr>
+                    <td>JACK DANIELS ........ $4.60</td>
+                  </tr>
+                  <tr>
+                    <td>BALENTINES ........ $3.80</td>
+                  </tr>
+                  <tr>
+                    <td>CHIVAS ........ $5.00</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- **********ORDER*************** -->
+          <div class="order hidden">
+            <div class="order__meal">
+              <span>Choose Your Meal</span>
+              <select name="meal" id="select">
+                <option value="0"></option>
+                <option value="16">Grilled Steak</option>
+                <option value="10">Chicken&Rice</option>
+                <option value="12">Cordon Blue</option>
+                <option value="32">Tuna Steak</option>
+                <option value="14">Jumbo Pizza</option>
+              </select>
+            </div>
+            <div class="order__salad">
+              <span>Choose Your Salad</span>
+              <select name="salad" id="select">
+                <option value="0"></option>
+                <option value="5">Season Salad</option>
+                <option value="7">Chicken Salad</option>
+                <option value="9">Fitness Salad</option>
+              </select>
+            </div>
+            <div class="order__dessert">
+              <span>Choose Your Dessert</span>
+              <select name="dessert" id="select">
+                <option value="0"></option>
+                <option value="5">Nutella Pancakes</option>
+                <option value="8">Banana Split</option>
+                <option value="2.5">Apple Pie</option>
+                <option value="1.2">Icecream</option>
+                <option value="11">Chocolate Cake</option>
+                <option value="12">Strawberry Cake</option>
+                <option value="3.7">Fruit&Cream</option>
+              </select>
+            </div>
+            <div class="order__drinks">
+              <span>Choose Your Drink</span>
+              <select name="drinks" id="select">
+                <option value="0"></option>
+                <option value="3">Mineral Water</option>
+                <option value="4.5">Fresh Orange Juice</option>
+                <option value="2.2">Coffee</option>
+                <option value="1.5">Tea</option>
+                <option value="2">Light Beer</option>
+                <option value="2.8">Dark Beer</option>
+                <option value="1.5">Wine</option>
+                <option value="4.6">Jack Daniels</option>
+                <option value="3.8">Balentines</option>
+                <option value="5">Chivas</option>
+              </select>
+            </div>
+            <input type="text" value="0.00$" class="checkout" readonly />
+            <input type="text" placeholder="Name..." class="checkout__name" />
+            <input
+              type="number"
+              placeholder="Phone number"
+              class="checkout__number"
+            />
+            <button type="button" class="checkoutBtn">Order Now</button>
+            <button type="button" class="clearBtn">Clear</button>
+          </div>
+
+          <!-- *********HERO************* -->
+          <img src="./img/hero.jpg" alt="restaurant pic" class="img__hero" />
+          <div class="txt__hero">
+            <h1 class="title__hero">Crystal Glamour</h1>
+            <h3 class="subtitle__hero">Welcome To Gourmets Paradise!</h3>
+          </div>
+        </section>
+
+        <!-- *******GALLERY********** -->
+
+        <!-- ********CONTACT********* -->
+        <section class="section__contact" id="contact">
+          <form class="section__form">
+            <input
+              class="section__form__input fName"
+              type="text"
+              placeholder="Enter your first name..."
+            />
+            <input
+              class="section__form__input lName"
+              type="text"
+              placeholder="Enter your last name..."
+            />
+            <input
+              class="section__form__input eMail"
+              type="text"
+              placeholder="Enter your email address..."
+            />
+            <textarea
+              class="section__form__textarea query"
+              placeholder="What's on your mind?"
+            ></textarea>
+            <button type="submit" class="section__form__button">Submit</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <div class="social__links">
+          <a href="https://github.com/VanjaXYZ" target="_blank">
+            <img src="./img/github.png" alt="github" />
+          </a>
+          <a href="https://twitter.com/SukurmaVanja" target="_blank">
+            <img src="./img/twitter.png" alt="twitter" />
+          </a>
+          <a href="https://www.facebook.com/vanja.sukurma.xyz" target="_blank">
+            <img src="./img/facebook.png" alt="facebook" />
+          </a>
+          <a href="https://www.instagram.com/vanja_ftw/?hl=en" target="_blank">
+            <img src="./img/instagram.png" alt="instagram" />
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
